@@ -1,8 +1,9 @@
 version: '2.0'
 
 services:
-  image: ./Dockerfile
-  env_file:
-    - .env
-  ports:
-    - 4324:3000
+  server:
+    image: .
+    env_file:
+      - .env
+    ports:
+      - 4324:3000
